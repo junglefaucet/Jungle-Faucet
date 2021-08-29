@@ -6,6 +6,7 @@ async function send_banano(addr, amount) {
     await bananojs.sendBananoWithdrawalFromSeed(process.env.seed, 0, addr, amount);
     return true;
   } catch (e) {
+    console.log(e)
     return false;
   }
 }

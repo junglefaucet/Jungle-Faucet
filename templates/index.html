@@ -2,8 +2,8 @@
   <head>
     <!-- Ape Lincoln for President -->
     <meta charset="utf-8">
-    <meta property="og:title" content="Prussia Banano Faucet">
-    <meta property="og:description" content="Earn Free Banano, and Never Let Your Memes be Dreams!">
+    <meta property="og:title" content="Crypto Jungle Faucet">
+    <meta property="og:description" content="Earn free banano every hour!">
     <meta property="og:image" content="(banano image here)">
     <meta name="viewport" content="width=device-width">
     <title>Banano Faucet</title>
@@ -21,20 +21,15 @@
       <br>
       {% if given %}
         {% if on_break %}
-          <p>Hello! I am on break, so to prevent the faucet from going dry, payouts are set to 0.02 bans. Please continue to feel free to donate</p>
+          <p>Hello! I am on break, so to prevent the faucet from going dry, payouts are set to 0.005 bans. Please continue to feel free to donate</p>
         {% else %}
-          <p>Come back in 24 hours to claim Banano again!</p>
+          <p>Come back every hour to claim Banano again!</p>
           <p>{{ amount }} Banano has been sent to address {{ address }}</p>
           <p>Donations to {{ faucet_addr }} keep the faucet running! Please donate. If the faucet has more than 100 bananos, payouts will increase.</p>
           <p>Also, I'm working on a social media site called <a href="https://www.reddit.com/r/banano/comments/nr1qvx/howler_social_media_platform_on_banano_concept_art/">Howler</a> that will be based on the Banano blockchain!</p>
         {% endif %}
         <b>Current Faucet Balance: {{ current_bal }}</b>
-        <p>Also, a big thank you to our sponsor:</p>
-        <center>
-          <a href="https://theconquestofbliss.com"><img src="/sponsor/1.png" width="110px" height="110px"></img></a>
-          <br>
-          <a href="https://theconquestofbliss.com">Visit it here</a> 
-        </center>
+        <!--ADVERTISEMENTS CAN GO HERE-->
       {% else %}
         {% if errors %}
           {{ errors }}
@@ -45,7 +40,7 @@
             <label for="address" class="form-label">Banano Address:</label>
             <input id="address" class="form-control" type="text" name="addr">
           </div>
-          <div class="h-captcha" data-sitekey="9e25731c-b4b7-4ccf-a454-72f303c04a9f"></div>
+          <div class="h-captcha" data-sitekey="4efca73b-f0c2-48b2-946f-ae814ee32135"></div>
           <div class="btn-container">
             <button type="submit">Get Free Banano</button>
           </div>
@@ -57,6 +52,11 @@
       <p>
         <a href="https://ibb.co/0XxGNqt" target="_blank">
           Frontend courtesy of: Ape Lincoln for President of the Banunion
+        </a>
+      </p>
+      <p>
+        <a href="https://prussia.dev" target="_blank">
+          This is a fork of prussia's faucet
         </a>
       </p>
     </footer>
